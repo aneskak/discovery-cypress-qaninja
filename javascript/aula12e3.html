@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cypress Discovery</title>
+</head>
+<body>
+    <h1>Olá, <span id="idnome"></span></h1>
+
+    <script type="text/javascript">
+
+        var varnome = prompt("Qual o seu nome?"); //função que solicita informações do ususario no navegador
+        var recebeIdade = prompt("Qual a sua idade?");
+        var ativo = true;
+
+        var idade = parseInt(recebeIdade);
+
+        console.log(varnome);
+        console.log(typeof varnome);
+        console.log(idade);
+        console.log(typeof idade);
+        console.log(ativo);
+        console.log(typeof ativo);
+        
+        document.getElementById("idnome").innerText = varnome;
+    </script>
+</body>
+</html>
